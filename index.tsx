@@ -6,7 +6,7 @@ import { config as ecomConfig } from "@wayke-se/ecom";
 
 ecomConfig.bind({
     api: {
-        address: "https://ecom.wayketech.se"
+        address: "https://ecom.wayke.se"
     },
 });
 

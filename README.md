@@ -16,7 +16,7 @@ Some things to note:
 ## Build
 
 * In the root dir, run `npm install`
-* Then run `npm run build`
+* Then run `npm run build-js` to build the javascript example or type `npm run build-ts` to build the typescript example
 
 The result is in the `build` folder.
 
@@ -26,7 +26,7 @@ The result is in the `build` folder.
 You can now open the `example.html` file and test the Wayke Ecom React component.
 In the html-file you can then see how you should implement the component on your own site.
 
-Note: You will of course have to configure `__ecomApiAddress` and `__ecomDevData` yourself to match prod/test environment and to add dynamic vehicle data.
+Note: To get a correct modal example, one needs to update the `data` variable with correct vehicle information.
 
 
 ## Resources
