@@ -4,39 +4,6 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 
-		<script type="text/javascript">
-			window.__ecomApiAddress = "https://ecom.wayketech.se";
-			window.__ecomDevData = {
-			    vehicle: {
-			        id: 'invalid-id',
-			        title: '',
-			        shortDescription: '',
-			        price: 0,
-			        imageUrl: '',
-			        modelYear: 0,
-			        milage: '',
-			        gearBox: '',
-			        fuelType: ''
-			    },
-			    serviceLogotypeUrl: '',
-			    onExit: () => {
-			        window.__ecomHandlers.hideEcomModal();
-			    },
-			    onUserEvent: (userEvent, currentStep) => {
-			        console.log(">> New tracking event");
-			        console.log("Event: " + userEvent);
-			        console.log("Current step: " + currentStep);
-			        console.log("-----");
-			    }
-			};
-		</script>
-
-		<script type="text/javascript">
-			function handleEcomButtonClick() {
-				window.__ecomHandlers.showEcomModal();
-			}
-		</script>
-
 		<link rel="stylesheet" type="text/css" href="node_modules/@wayke-se/ecom-react/assets/styles/default.css">
 	</head>
 
@@ -45,7 +12,7 @@
 			<h1>Here is a header</h1>
 			<p>Welcome to the ecom react test site</p>
 
-			<button onclick="handleEcomButtonClick()">Click here for ecom modal</button>
+			<button id="wayke-ecom">Click here for ecom modal</button>
 
 			<div id="ecom-modal-wrapper"></div>
 		</div>
