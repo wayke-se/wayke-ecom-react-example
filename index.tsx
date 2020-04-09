@@ -1,3 +1,8 @@
+/** POLYFILLS  **/
+import "core-js";
+import "regenerator-runtime/runtime";
+/** /POLYFILLS **/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
