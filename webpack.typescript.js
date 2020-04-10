@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    devtool: "source-map",
     context: path.resolve(__dirname),
     entry: {
         default: './index.tsx',
@@ -19,6 +20,25 @@ module.exports = {
                 test: /\.tsx?$/,
                 use: [{
                     loader: 'ts-loader'
+                }],
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules\/core-js/,
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            [
+                                "@babel/preset-env",
+                                {
+                                    useBuiltIns: "entry",
+                                    corejs: 3,
+                                },
+                            ],
+                            ["@babel/preset-react"]
+                        ],
+                    }
                 }],
             }
         ],
