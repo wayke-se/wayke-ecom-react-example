@@ -24,7 +24,7 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                exclude: /node_modules\/core-js/,
+                exclude: /node_modules[\/|\\]core-js/,
                 use: [{
                     loader: 'babel-loader',
                     options: {
