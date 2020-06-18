@@ -41,7 +41,8 @@ const data = {
 		console.log("Event: " + userEvent);
 		console.log("Current step: " + currentStep);
 		console.log("-----");
-	}
+	},
+	useBankId: true,
 };
 
 const showEcomModal = () => {
