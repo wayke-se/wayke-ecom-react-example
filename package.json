@@ -6,7 +6,7 @@
     "build-ts": "webpack --config webpack.typescript.js --progress --profile --bail --mode production"
   },
   "dependencies": {
-    "@wayke-se/ecom-react": "^3.2.1",
+    "@wayke-se/ecom-react": "^3.3.0",
     "core-js": "^3.6.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
